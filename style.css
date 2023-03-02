@@ -6,14 +6,34 @@ section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 5px;
+    text-align: center;
 }
+
 div{
-    padding: 5px;
     flex: 0 0 calc(25% - 5px);
     border: 1px solid black;
 }
-@media screen and(max-width:400px) {
+
+#tablazat{
+    text-align: center;
+    margin: 5%;
+    border: 3px dashed blue;
+}
+
+#tablazat th{
+    border-bottom: 1px dashed blue;
+}
+
+#tablazat td:nth-child(1){
+    border-right: 1px dashed blue;
+    border-bottom: 1px dashed blue;
+}
+
+#tablazat td:nth-child(2){
+    background-color: rgba(166, 241, 241, 0.288);
+}
+
+@media screen and (max-width: 500px) {
     div{
         flex: 0 0 calc(50% - 5px);
     }
